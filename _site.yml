@@ -1,0 +1,14 @@
+name: "Laura's!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<syorila@ucmail.uc.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/<syorila>/
+output:
+  html_document:
+    theme: cerulean
