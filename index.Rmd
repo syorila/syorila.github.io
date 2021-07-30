@@ -19,7 +19,7 @@ library(htmlwidgets)
 
 ## 
 ```{r}
-dashboard_cleaned = read.csv("~/Desktop/Practicum Project/practicum_project/dashpractproj.github.io/dashboard.csv") %>% 
+dashboard_cleaned = read.csv("~/Desktop/Practicum Project/practicum_project/syorila.github.io/dashboard.csv") %>% 
   # changing the dataset into a tidyverse table from base R
   as.tibble() %>% 
   # separating the contact_date into date_ct and time_ct for better manipulation
@@ -99,7 +99,7 @@ dashboard_cleaned %>%
 
 ```{r}
 # loading the screened dataset
-scr_df = read_csv("~/Desktop/Practicum Project/practicum_project/dashpractproj.github.io/dash_screened.csv") %>% 
+scr_df = read_csv("~/Desktop/Practicum Project/practicum_project/syorila.github.io/dash_screened.csv") %>% 
   janitor::clean_names() %>%
   select(-x1)
 
@@ -141,7 +141,7 @@ props_df %>%
 
 ```{r}
 #Importing new dataset (CRC2019)
-crc_may_2019 = read_csv("~/Desktop/Practicum Project/practicum_project/dashpractproj.github.io/May 2019 CRCs .csv", skip = 2) %>% 
+crc_may_2019 = read_csv("~/Desktop/Practicum Project/practicum_project/syorila.github.io/May 2019 CRCs .csv", skip = 2) %>% 
   janitor::clean_names() %>% 
   dplyr::mutate(
     day_of_month = mdy(date),
